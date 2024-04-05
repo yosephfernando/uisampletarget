@@ -1,0 +1,317 @@
+<!DOCS html>
+<html>
+    <head>
+        <title>LSM Enviroment</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets/js/tailwindcss-3.4.3.js"></script>
+    </head>
+    <body>
+        <nav class="bg-inherit">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                            Icon when menu is closed.
+
+                            Menu open: "hidden", Menu closed: "block"
+                        -->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!--
+                            Icon when menu is open.
+
+                            Menu open: "block", Menu closed: "hidden"
+                        -->
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="flex flex-shrink-0 items-center">
+                            <a href="index.html">
+                                <img class="h-8 w-auto" src="assets/images/planet-earth.png" alt="Your Company">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 hidden md:block sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <div class="flex space-x-4 items-center">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="index.html" class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
+                            <a href="aksi.html" class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Aksi</a>
+                            <a href="jelajahi.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Jelajahi</a>
+                            <div>
+                                <input type="text" placeholder="Cari" class="rounded-lg px-3 py-1" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pb-3 pt-2">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Aksi</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Jelajahi</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Donasi</a>
+                    <div>
+                        <input type="text" placeholder="Cari" class="rounded-lg px-3 py-1" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mx-auto">
+            <div class="sm:h-4/6 md:h-100 w-full bg-cover bg-center bg-no-repeat text-white bg-[url('assets/images/forest-8167566_1280.jpg')] p-20 sm:px-40 flex justify-center flex-col">
+                <h1 class="text-lg sm:text-xl lg:text-3xl font-bold">Lindungi, Ciptakan Perubahan, Bergabung Bersama Kami!</h1>
+                <h3 class="text-md sm:text-lg lg:text-2xl font-bold my-4">Bumi yang rapuh ini membutuhkan suaramu. Membutuhkan solusi, perubahan, dan tindakan nyata.</h3>
+                <p class="text-sm sm:text-md lg:text-xl">Tanpa dukunganmu, kami tidak akan bisa bertindak lebih. Tetapi bersama-sama, kita dapat menghentikan perusakan lingkungan, meminta pertanggungjawaban perusahaan dan pemerintah, serta membangun masa depan yang berkelanjutan untuk diri kita sendiri dan Bumi ini.</p>
+                <button class="mt-4 w-full sm:w-1/4 bg-yellow-400 rounded-sm font-bold p-3">Saya ingin Bergabung</button>
+            </div>
+            <div class="sm:h-4/6 md:h-100 w-full bg-cover bg-center bg-no-repeat bg-[url('assets/images/trees-975091_1280.jpg')] p-20 sm:px-40 flex justify-center flex-col">
+                <div class="flex items-center justify-between gap-3">
+                    <div class="w-full sm:w-1/2 text-white">
+                        <h1 class="text-lg sm:text-xl lg:text-3xl font-bold">Lindungi</h1>
+                        <h3 class="text-md sm:text-lg lg:text-2xl font-bold my-4">Lindungi alam bisa kamu lakukan hari ini. Pelajari isu-isu lingkungan di sekitarmu.</h3>
+                        <button class="mt-4 font-bold">Pelajari lebih lanjut ></button>
+                    </div>
+                    <div class="w-full sm:w-1/2 text-white">
+                        <h1 class="text-lg sm:text-xl lg:text-4xl font-bold text-yellow-400">#Hutan</h1>
+                        <h3 class="text-md sm:text-lg lg:text-2xl font-bold my-4">Di seluruh dunia, hutan-hutan alami sedang dalam krisis. Tumbuhan dan binatang yang hidup didalamnya terancam punah. Ayo bersatu selamatkan hutan!</h3>
+                        <button class="mt-4 w-1/2 bg-yellow-400 rounded-sm font-bold p-3 text-black">Hutan butuh kamu</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:h-4/6 md:h-100 w-full bg-cover bg-center bg-no-repeat bg-[url('assets/images/pexels-pixabay-532192.jpg')] p-20 sm:px-40 flex justify-center flex-col">
+                <div class="flex items-center justify-between gap-3">
+                    <div class="w-full sm:w-1/2 text-white">
+                        <h1 class="text-lg sm:text-xl lg:text-3xl font-bold">Ciptakan Perubahan</h1>
+                        <h3 class="text-md sm:text-lg lg:text-2xl font-bold my-4">Greenpeace selalu berjuang untuk menciptakan perubahan demi masa depan lingkungan yang lebih baik</h3>
+                        <button class="mt-4 font-bold">Pelajari lebih lanjut ></button>
+                    </div>
+                    <div class="w-full sm:w-1/2 text-white">
+                        <h1 class="text-lg sm:text-xl lg:text-4xl font-bold text-yellow-400">#EnergiTerbarukan</h1>
+                        <h3 class="text-md sm:text-lg lg:text-2xl font-bold my-4">Tinggalkan ketergantungan penggunaan bahan bakar fosil kearah sumber-sumber energi yang terbarukan, bersih dan berkelanjutan.</h3>
+                        <button class="mt-4 w-1/2 bg-yellow-400 rounded-sm font-bold p-3 text-black">Ikut ciptakan perubahan</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-20 sm:mx-40">
+                <h1 class="text-3xl font-bold mt-3">
+                    Dukung Kampanye Kita
+                </h1>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="my-3 rounded-lg border-2 border-slate-300 shadow-lg overflow-hidden">
+                        <img src="assets/images/b0452c88-project-cf-cover-kitabisa-2-510x274.png" />
+                        <div class="p-4">
+                            <p class="text-gray-500 font-bold">Berdonasi</p>
+                            <h1 class="font-bold text-2xl my-2">Ruang Bernafas Untuk Marunda</h1>
+                            <p>Saatnya bertindak! Bantu warga marunda terbebas dari pekatnya polusi dengan membangun 3 Ruang Bernapas bersama.</p>
+                            <div class="flex justify-end">
+                                <div>
+                                    <button class="text-right mt-3 bg-yellow-400 rounded-lg font-bold p-3">Ikut beraksi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3 rounded-lg border-2 border-slate-300 shadow-lg overflow-hidden">
+                        <img src="assets/images/b0452c88-project-cf-cover-kitabisa-2-510x274.png" />
+                        <div class="p-4">
+                            <p class="text-gray-500 font-bold">Berdonasi</p>
+                            <h1 class="font-bold text-2xl my-2">Ruang Bernafas Untuk Marunda</h1>
+                            <p>Saatnya bertindak! Bantu warga marunda terbebas dari pekatnya polusi dengan membangun 3 Ruang Bernapas bersama.</p>
+                            <div class="flex justify-end">
+                                <div>
+                                    <button class="text-right mt-3 bg-yellow-400 rounded-lg font-bold p-3">Ikut beraksi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3 rounded-lg border-2 border-slate-300 shadow-lg overflow-hidden">
+                        <img src="assets/images/b0452c88-project-cf-cover-kitabisa-2-510x274.png" />
+                        <div class="p-4">
+                            <p class="text-gray-500 font-bold">Berdonasi</p>
+                            <h1 class="font-bold text-2xl my-2">Ruang Bernafas Untuk Marunda</h1>
+                            <p>Saatnya bertindak! Bantu warga marunda terbebas dari pekatnya polusi dengan membangun 3 Ruang Bernapas bersama.</p>
+                            <div class="flex justify-end">
+                                <div>
+                                    <button class="text-right mt-3 bg-yellow-400 rounded-lg font-bold p-3">Ikut beraksi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-20 sm:mx-40">
+                <h1 class="text-3xl font-bold mt-3">
+                    Ikut Terlibat Bersama Greenpeace
+                </h1>
+                <p class="my-3">Ada banyak cara ikut terlibat dalam kampanye lingkungan bersama Greenpeace. Membagikan kampanye kami lewat media sosial, membuat kampanyemu sendiri, menghubungi kantor Greenpeace di negara kamu untuk mencari kesempatan menjadi relawan ataupun bekerja di Greenpeace atau menjadi awak kapal. Bumi kita yang rentan ini membutuhkan solusimu dan juga aksimu.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="my-3 rounded-lg border-2 border-slate-300 shadow-lg overflow-hidden">
+                        <img src="assets/images/b0452c88-project-cf-cover-kitabisa-2-510x274.png" />
+                        <div class="p-4">
+                            <p class="text-gray-500 font-bold">Berdonasi</p>
+                            <h1 class="font-bold text-2xl my-2">Ruang Bernafas Untuk Marunda</h1>
+                            <p>Saatnya bertindak! Bantu warga marunda terbebas dari pekatnya polusi dengan membangun 3 Ruang Bernapas bersama.</p>
+                            <div class="flex justify-end">
+                                <div>
+                                    <button class="text-right mt-3 bg-yellow-400 rounded-lg font-bold p-3">Ikut beraksi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3 rounded-lg border-2 border-slate-300 shadow-lg overflow-hidden">
+                        <img src="assets/images/b0452c88-project-cf-cover-kitabisa-2-510x274.png" />
+                        <div class="p-4">
+                            <p class="text-gray-500 font-bold">Berdonasi</p>
+                            <h1 class="font-bold text-2xl my-2">Ruang Bernafas Untuk Marunda</h1>
+                            <p>Saatnya bertindak! Bantu warga marunda terbebas dari pekatnya polusi dengan membangun 3 Ruang Bernapas bersama.</p>
+                            <div class="flex justify-end">
+                                <div>
+                                    <button class="text-right mt-3 bg-yellow-400 rounded-lg font-bold p-3">Ikut beraksi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3 rounded-lg border-2 border-slate-300 shadow-lg overflow-hidden">
+                        <img src="assets/images/b0452c88-project-cf-cover-kitabisa-2-510x274.png" />
+                        <div class="p-4">
+                            <p class="text-gray-500 font-bold">Berdonasi</p>
+                            <h1 class="font-bold text-2xl my-2">Ruang Bernafas Untuk Marunda</h1>
+                            <p>Saatnya bertindak! Bantu warga marunda terbebas dari pekatnya polusi dengan membangun 3 Ruang Bernapas bersama.</p>
+                            <div class="flex justify-end">
+                                <div>
+                                    <button class="text-right mt-3 bg-yellow-400 rounded-lg font-bold p-3">Ikut beraksi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-20 sm:mx-40">
+                <h1 class="text-3xl font-bold mt-3">
+                    Artikel terbaru
+                </h1>
+                <div class="flex flex-col my-3">
+                    <div class="flex items-center flex-wrap sm:flex-nowrap gap-4">
+                        <div>
+                            <img src="assets/images/8a4343ce-gp1sumly-510x340.jpg" />
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-2xl">Majelis Ulama Indonesia Mengeluarkan Fatwa Pengendalian Perubahan Iklim Global</h1>
+                            <p class="my-1">Sebagai bagian dari upaya mitigasi dampak krisis iklim, Majelis Ulama Indonesia mengeluarkan Fatwa Pengendalian Perubahan Iklim Global</p>
+                            <em>28 januari 2024</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col my-3">
+                    <div class="flex items-center flex-wrap sm:flex-nowrap gap-4">
+                        <div>
+                            <img src="assets/images/8a4343ce-gp1sumly-510x340.jpg" />
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-2xl">Majelis Ulama Indonesia Mengeluarkan Fatwa Pengendalian Perubahan Iklim Global</h1>
+                            <p class="my-1">Sebagai bagian dari upaya mitigasi dampak krisis iklim, Majelis Ulama Indonesia mengeluarkan Fatwa Pengendalian Perubahan Iklim Global</p>
+                            <em>28 januari 2024</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col my-3">
+                    <div class="flex items-center flex-wrap sm:flex-nowrap gap-4">
+                        <div>
+                            <img src="assets/images/8a4343ce-gp1sumly-510x340.jpg" />
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-2xl">Majelis Ulama Indonesia Mengeluarkan Fatwa Pengendalian Perubahan Iklim Global</h1>
+                            <p class="my-1">Sebagai bagian dari upaya mitigasi dampak krisis iklim, Majelis Ulama Indonesia mengeluarkan Fatwa Pengendalian Perubahan Iklim Global</p>
+                            <em>28 januari 2024</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col my-3">
+                    <div class="flex items-center flex-wrap sm:flex-nowrap gap-4">
+                        <div>
+                            <img src="assets/images/8a4343ce-gp1sumly-510x340.jpg" />
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-2xl">Majelis Ulama Indonesia Mengeluarkan Fatwa Pengendalian Perubahan Iklim Global</h1>
+                            <p class="my-1">Sebagai bagian dari upaya mitigasi dampak krisis iklim, Majelis Ulama Indonesia mengeluarkan Fatwa Pengendalian Perubahan Iklim Global</p>
+                            <em>28 januari 2024</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-20 sm:mx-40">
+                <h1 class="text-3xl font-bold mt-3">
+                    Bersama kita membuat perubahan
+                </h1>
+                <form>
+                    <div class="flex flex-wrap">
+                        <div class="w-full sm:w-1/3 flex flex-col">
+                            <label>Email</label>
+                            <input class="rounded-lg border-2 border-slate-300 h-10 px-3" type="text" name="email" />
+                        </div>
+                        <div class="w-full sm:w-1/3 px-1 flex flex-col">
+                            <label>Nama depan</label>
+                            <input class="rounded-lg border-2 border-slate-300 h-10 px-3" type="text" name="nama" />
+                        </div>
+                        <div class="w-full sm:w-1/3 flex flex-col">
+                            <label>Nama belakang</label>
+                            <input class="rounded-lg border-2 border-slate-300 h-10 px-3" type="text" name="nama" />
+                        </div>
+                    </div>
+                    <p class="my-2">
+                        Greenpeace Southeast Asia memerlukan informasi kontak yang Anda berikan kepada kami untuk menghubungi Anda tentang produk dan layanan kami. Anda dapat berhenti berlangganan dari komunikasi ini kapan pun. Untuk informasi tentang cara berhenti berlangganan, serta praktik privasi dan komitmen kami untuk melindungi privasi Anda, tinjau Kebijakan Privasi kami.
+                    </p>
+                    <button class="p-3 bg-pink-700 text-white mt-3">BERGABUNG SEKARANG</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="bg-emerald-800 py-4">
+            <div class="flex px-20 text-white font-bold">
+                <div class="flex w-1/3 flex-col gap-4">
+                    <p>Tentang kami</p>
+                    <p>Kontak</p>
+                    <p>Pers</p>
+                    <p>Supporter care</p>
+                    <p>Peta situs</p>
+                </div>
+                <div class="flex w-1/3 flex-col gap-4">
+                    <p>Kebijakan privasi</p>
+                    <p>Hak cipta</p>
+                    <p>Ketentuan</p>
+                    <p>Kebijakan komunitas</p>
+                    <p>FAQ</p>
+                    <p>Arsip</p>
+                </div>
+                <div class="flex w-1/3 flex-col gap-4">
+                    <p>Follow us on:</p>
+                    <div class="flex gap-3">
+                        <div class="w-1/12">
+                            <img src="assets/images/facebook.png" />
+                        </div>
+                        <div class="w-1/12">
+                            <img src="assets/images/twitter.png" />
+                        </div>
+                        <div class="w-1/12">
+                            <img src="assets/images/instagram.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
